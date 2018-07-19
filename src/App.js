@@ -1,7 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Button from './components/Button';
+import CommentFeed from './containers/CommentFeed';
 import './App.css';
+const comments = [
+  {
+    author: 'Ian Wilson',
+    text: 'A boats a boat but a mystery box could be anything.'
+  },
+  {
+    author: 'Max Powers Jr',
+    text: 'Krypton sucks.'
+  },
+  {
+    author: 'Kent Beck',
+    text: 'Red, Green, Refactor.'
+  }
+];
 
 class App extends Component {
   render() {
@@ -17,6 +32,7 @@ class App extends Component {
         <div>
           <Button text="Press" />
         </div>
+        <CommentFeed comments={comments} />
       </div>
     );
   }
