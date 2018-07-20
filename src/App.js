@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import Button from './components/Button/Button';
-import MainContainer from './containers/MainContainer/MainContainer';
+import MainComponent from './containers/MainComponent/MainComponent';
 import './App.css';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
         <div>
           <Button text="Press" />
         </div>
-        <MainContainer />
+        <MainComponent />
       </div>
     );
   }
